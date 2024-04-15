@@ -1,0 +1,151 @@
+@page "/tests-measurements/morphological-anthropometric"
+@rendermode InteractiveServer
+
+<PageTitle>@Title</PageTitle>
+
+<h1>@Title</h1>
+
+@*
+https://www.fluentui-blazor.net/Forms
+*@
+<FluentTabs 
+    ActiveTabId="tab-1" 
+    Class="content"
+    >
+    <FluentTab 
+        Id="tab-1" 
+        Label="Simple"
+        >
+        <EditForm 
+            Model="@bmi" 
+            OnValidSubmit="@HandleValidSubmit" 
+            FormName="bmi_fluent_entry" 
+            novalidate
+            >
+            <DataAnnotationsValidator />
+            <FluentValidationSummary />
+
+            <FluentStack Orientation="Orientation.Vertical">
+                <p>
+                    <FluentNumberField 
+                        @bind-Value="@bmi.Height"
+                        AriaLabel="Height"
+                        Autofocus="true"
+                        >
+                    </FluentNumberField>
+                </p>
+                <div>
+                    <FluentNumberField 
+                        @bind-Value="@bmi.Mass"
+                        >
+                        Mass
+                    </FluentNumberField>
+                </div>
+                <FluentButton 
+                    Type="ButtonType.Submit" 
+                    Appearance="Appearance.Accent"
+                    >
+                    Submit
+                </FluentButton>
+            </FluentStack>
+        </EditForm>
+    </FluentTab>
+    <FluentTab 
+        Id="tab-2" 
+        Label="Batch"
+        >
+        <FluentButton 
+            Type="ButtonType.Submit" 
+            Appearance="Appearance.Accent"
+            >
+            Add
+        </FluentButton>
+ 
+        <FluentDataGrid 
+            id="defaultGrid" 
+            Items=RowsGrid.AsQueryable() 
+            GridTemplateColumns="1fr 1fr 1fr" 
+            TGridItem=BMI 
+            OnRowFocus="HandleRowFocus" 
+            OnCellFocus="HandleCellFocus"
+            >
+            <TemplateColumn 
+                Title="Mass [kg]"
+                >
+                <FluentNumberField 
+                    @bind-Value="@bmi.Mass"
+                    TValue="double"
+                    />
+            </TemplateColumn>
+            <TemplateColumn 
+                Title="Height"
+                >
+                <FluentNumberField 
+                    @bind-Value="@bmi.Height" 
+                    TValue="double"
+                    />
+            </TemplateColumn>
+            <TemplateColumn 
+                Title="Body mass Index BMI [kg/m²]"
+                >
+                <FluentNumberField 
+                    @bind-Value="@bmi.ValueBMI" 
+                    TValue="double"
+                    />
+            </TemplateColumn>
+        </FluentDataGrid>
+    </FluentTab>
+</FluentTabs>
+
+@code 
+{
+    string Title = "Morphological-Anthropometric";
+
+    class BMI
+    {
+        public double Mass {get; set;}
+        public double Height {get; set;}
+        public double ValueBMI {get; set;}
+
+        public BMI(double m = 80.0, double h = 1.80)
+        {
+            Mass = m;
+            Height = h;
+        }
+
+    }
+
+    [SupplyParameterFromForm]
+    private BMI bmi { get; set; } = new();
+
+    protected override void OnInitialized()
+    {
+    }
+
+    private void HandleValidSubmit()
+    {
+        // Process the valid form
+    }
+
+    string? activeid = "tab-1";
+    FluentTab? changedto;
+
+    private void HandleOnTabChange(FluentTab tab)
+    {
+        changedto = tab;
+    }
+
+    List<BMI> RowsGrid = new()
+    {
+        new BMI(80.1, 19 ),
+        new BMI(90, 20 )
+    };
+
+    private void HandleRowFocus(FluentDataGridRow<BMI> row)
+    {
+    }
+
+    private void HandleCellFocus(FluentDataGridCell<BMI> cell)
+    {
+    }
+}

@@ -1,0 +1,96 @@
+@page "/tests-measurements/motoric"
+@rendermode InteractiveServer
+
+<PageTitle>@Title</PageTitle>
+
+<h1>@Title</h1>
+
+<FluentTabs 
+    ActiveTabId="tab-1" 
+    Class="content"
+    >
+    <FluentTab 
+        Id="tab-1" 
+        Label="Simple"
+        >
+    </FluentTab>
+    <FluentTab 
+        Id="tab-2" 
+        Label="Batch"
+        >
+        <FluentDataGrid 
+            id="defaultGrid" 
+            Items=RowsGrid.AsQueryable() 
+            GridTemplateColumns="1fr 1fr 1fr" 
+            TGridItem=MassApproximationMaxLoad1RM 
+            OnRowFocus="HandleRowFocus" 
+            OnCellFocus="HandleCellFocus"
+            >
+            <TemplateColumn 
+                Title="Mass [kg]"
+                >
+                <FluentNumberField 
+                    @bind-Value="@context!.Mass"
+                    TValue="double"
+                    />
+            </TemplateColumn>
+            <TemplateColumn 
+                Title="Repetitions"
+                >
+                <FluentNumberField 
+                    @bind-Value="@context!.Repetitions" 
+                    TValue="int"
+                    />
+            </TemplateColumn>
+            <TemplateColumn 
+                Title="Mass [kg] Maximal 1RM Approximation"
+                >
+                <FluentNumberField 
+                    @bind-Value="@context!.MassAproximation" 
+                    TValue="double"
+                    />
+            </TemplateColumn>
+        </FluentDataGrid>
+    </FluentTab>
+</FluentTabs>
+
+
+@code 
+{
+    string Title = "Motoric";
+
+    public class MassApproximationMaxLoad1RM
+    {
+        public double Mass { get; set; }
+        public int Repetitions { get; set; }
+        public double MassAproximation { get; set; }
+        
+        public MassApproximationMaxLoad1RM(double m, int r)
+        {
+            Mass = m;
+            Repetitions = r;
+        }
+    }
+
+    string? activeid = "tab-1";
+    FluentTab? changedto;
+
+    private void HandleOnTabChange(FluentTab tab)
+    {
+        changedto = tab;
+    }
+
+    List<MassApproximationMaxLoad1RM> RowsGrid = new()
+    {
+        new MassApproximationMaxLoad1RM(80.1, 19 ),
+        new MassApproximationMaxLoad1RM(90, 20 )
+    };
+
+    private void HandleRowFocus(FluentDataGridRow<MassApproximationMaxLoad1RM> row)
+    {
+    }
+
+    private void HandleCellFocus(FluentDataGridCell<MassApproximationMaxLoad1RM> cell)
+    {
+    }
+}

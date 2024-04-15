@@ -1,0 +1,98 @@
+﻿<div class="navmenu">
+    <input type="checkbox" title="Menu expand/collapse toggle" id="navmenu-toggle" class="navmenu-icon" />
+    <label for="navmenu-toggle" class="navmenu-icon"><FluentIcon Value="@(new Icons.Regular.Size20.Navigation())" Color="Color.Fill" /></label>
+    <nav class="sitenav" aria-labelledby="main-menu" onclick="document.getElementById('navmenu-toggle').click();">
+
+    @*
+    https://icon-sets.iconify.design/fluent/
+    *@
+    <FluentNavMenuTree 
+            Id="main-menu" 
+            Collapsible="true" 
+            Width="300"
+            Title="Navigation menu" 
+            @bind-Expanded="expanded"
+            >
+            <FluentNavMenuLink 
+                Text="Home Ph4ct3x"
+                Href="/" 
+                Match="NavLinkMatch.All" 
+                Icon="@(new Icons.Regular.Size20.Home())" 
+                IconColor="Color.Accent"
+                />
+            <FluentNavMenuGroup 
+                Text="Tests & Measurements"
+                Icon="@(new Icons.Regular.Size20.Calculator())" 
+                Href="/tests-measurements"
+                >
+                <FluentNavMenuLink 
+                    Text=""
+                    Href="/tests-measurements/morphological-anthropometric" 
+                    Icon="@(new Icons.Regular.Size20.Accessibility())" 
+                    IconColor="Color.Accent"
+                    >
+                    Morphological-Anthropmetric
+                </FluentNavMenuLink>
+                <FluentNavMenuLink 
+                    Text=""
+                    Href="/tests-measurements/motoric" 
+                    Icon="@(new Icons.Regular.Size20.PersonRunning())" 
+                    IconColor="Color.Accent"
+                    >
+                    Motoric
+                </FluentNavMenuLink>
+                <FluentNavMenuLink 
+                    Text=""
+                    Href="/tests-measurements/physiological" 
+                    Icon="@(new Icons.Regular.Size20.HeartPulse())" 
+                    IconColor="Color.Accent"
+                    >
+                    Physiological
+                </FluentNavMenuLink>
+            </FluentNavMenuGroup>
+            <FluentNavMenuGroup 
+                Text="Utilities"
+                Icon="@(new Icons.Regular.Size20.Calculator())" 
+                Href="/utilities"
+                >
+                <FluentNavMenuLink
+                    Text="Weather" 
+                    Href="/utilities/weather" 
+                    Icon="@(new Icons.Regular.Size20.WeatherPartlyCloudyDay())" 
+                    IconColor="Color.Accent"
+                    />
+            </FluentNavMenuGroup>
+            <FluentNavMenuGroup 
+                Text="Organizational"
+                Icon="@(new Icons.Regular.Size20.Organization())" 
+                Href="/organizational"
+                >
+            </FluentNavMenuGroup>
+            <FluentNavMenuGroup 
+                Text="Settings"
+                Icon="@(new Icons.Regular.Size20.Settings())" 
+                Href="/settings"
+                >
+            </FluentNavMenuGroup>
+    </FluentNavMenuTree>
+
+    </nav>
+</div>
+
+@code 
+{
+    public bool expanded = true;
+
+    void OnClick(MouseEventArgs e)
+    {
+    }
+
+    protected override void OnAfterRender(bool firstRender) {
+        if (firstRender) 
+        {
+            
+        }
+        base.OnAfterRender(firstRender);
+    }
+}
+

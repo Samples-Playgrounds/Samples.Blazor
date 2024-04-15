@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>db4c4e7e-09ec-4755-a431-320cff190d15</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.0-preview.5.24201.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppAsipre.ServiceDefaults\AppAsipre.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\..\AppBlazor.Fluent\AppBlazor.Fluent.csproj" />
+    <ProjectReference Include="..\..\AppBlazor.WASM.Fluent\AppBlazor.WASM.Fluent.csproj" />
+  </ItemGroup>
+
+</Project>
