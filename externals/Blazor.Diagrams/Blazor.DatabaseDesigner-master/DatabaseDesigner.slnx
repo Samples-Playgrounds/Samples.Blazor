@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DatabaseDesigner.Core/DatabaseDesigner.Core.csproj" />
+  <Project Path="DatabaseDesigner.Wasm/DatabaseDesigner.Wasm.csproj" />
+</Solution>
