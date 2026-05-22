@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Apps/">
+    <Project Path="IceNet.App.Maui/IceNet.App.Maui.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="IceNet.App.Web/IceNet.App.Web.csproj" />
+  </Folder>
+  <Folder Name="/Services/">
+    <Project Path="IceNet.Service.Preferences/IceNet.Service.Preferences.csproj" />
+  </Folder>
+  <Folder Name="/Shared/">
+    <Project Path="IceNet.Shared/IceNet.Shared.csproj" />
+  </Folder>
+</Solution>
