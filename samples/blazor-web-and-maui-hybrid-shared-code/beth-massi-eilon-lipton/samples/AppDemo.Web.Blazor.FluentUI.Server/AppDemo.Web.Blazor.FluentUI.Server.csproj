@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFrameworks>net10.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>true</IsPackable>
+    <AssemblyVersion>3.7.5.24178</AssemblyVersion>
+    <FileVersion>3.7.5.24178</FileVersion>
+    <InformationalVersion>3.7.5.24178</InformationalVersion>
+    <Version>3.7.5</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="3.8.0" />
+  </ItemGroup>
+</Project>
