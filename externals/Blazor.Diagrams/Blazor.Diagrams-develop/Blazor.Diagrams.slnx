@@ -1,0 +1,36 @@
+<Solution>
+  <Folder Name="/docs/">
+    <File Path="docs/Directory.Build.props" />
+    <Project Path="docs/CustomNodesLinks/CustomNodesLinks.csproj" />
+    <Project Path="docs/Diagram-Demo/Diagram-Demo.csproj" />
+    <Project Path="docs/Layouts/Layouts.csproj" />
+  </Folder>
+  <Folder Name="/samples/">
+    <File Path="samples/Directory.Build.props" />
+    <Project Path="samples/ServerSide/ServerSide.csproj" />
+    <Project Path="samples/SharedDemo/SharedDemo.csproj" />
+    <Project Path="samples/Wasm/Wasm.csproj" />
+  </Folder>
+  <Folder Name="/site/">
+    <Project Path="site/Site/Site.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".github/workflows/build.yml" />
+    <File Path=".github/workflows/main.yml" />
+    <File Path=".github/workflows/push.yml" />
+    <File Path="CHANGELOG.md" />
+    <File Path="Directory.Packages.props" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <File Path="src/Directory.Build.props" />
+    <Project Path="src/Blazor.Diagrams.Algorithms/Blazor.Diagrams.Algorithms.csproj" />
+    <Project Path="src/Blazor.Diagrams.Core/Blazor.Diagrams.Core.csproj" />
+    <Project Path="src/Blazor.Diagrams/Blazor.Diagrams.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <File Path="tests/Directory.Build.props" />
+    <Project Path="tests/Blazor.Diagrams.Core.Tests/Blazor.Diagrams.Core.Tests.csproj" />
+    <Project Path="tests/Blazor.Diagrams.Tests/Blazor.Diagrams.Tests.csproj" />
+  </Folder>
+</Solution>
