@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/AppAsipre/">
+    <Project Path="AppAsipre/AppAsipre.AppHost/AppAsipre.AppHost.csproj" />
+    <Project Path="AppAsipre/AppAsipre.ServiceDefaults/AppAsipre.ServiceDefaults.csproj" />
+  </Folder>
+  <Project Path="AppBlazor.Fluent/AppBlazor.Fluent.csproj" />
+  <Project Path="AppBlazor.WASM.Fluent/AppBlazor.WASM.Fluent.csproj" />
+</Solution>
