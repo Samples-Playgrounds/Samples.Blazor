@@ -5,6 +5,66 @@ readme.md
 *   https://github.com/BethMassi/HybridSharedUI/tree/master
 
 
+```
+Template Name                                   Short Name             Language  Tags                                                                                
+----------------------------------------------  ---------------------  --------  ------------------------------------------------------------------------------------
+.NET MAUI Blazor Hybrid and Web App             maui-blazor-web        [C#]      MAUI/Android/iOS/macOS/Mac Catalyst/Windows/Blazor/Blazor Hybrid/Mobile/Tizen       
+.NET MAUI Blazor Hybrid App                     maui-blazor            [C#]      MAUI/Android/iOS/macOS/Mac Catalyst/Windows/Blazor/Blazor Hybrid/Mobile/Tizen       
+Aspire Starter App (ASP.NET Core/Blazor)        aspire-starter         [C#]      Common/Aspire/Cloud/Web/Web API/API/Service/Blazor/Test/MSTest/NUnit/xUnit          
+Blazor Web App                                  blazor                 [C#]      Web/Blazor/WebAssembly                                                              
+Blazor WebAssembly Standalone App               blazorwasm             [C#]      Web/Blazor/WebAssembly/PWA                                                          
+BlazorBlueprint Web App                         blazorblueprint        [C#]      Web/Blazor/UI/SPA                                                                   
+Experimental Mobile Blazor Bindings App         mobileblazorbindings   [C#]      Blazor/Xamarin.Forms                                                                
+Experimental Mobile Blazor Bindings Hybrid App  blazorhybrid           [C#]      Blazor/Xamarin.Forms/Web                                                            
+Fluent .NET MAUI Blazor Hybrid and Web App      fluentmaui-blazor-web  [C#]      MAUI/Android/iOS/macOS/Mac Catalyst/Windows/Tizen/Blazor/Blazor Hybrid/Mobile/Fluent
+Fluent Blazor Web App                           fluentblazor           [C#]      Web/Fluent/Blazor/WebAssembly                                                       
+Fluent Blazor WebAssembly Standalone App        fluentblazorwasm       [C#]      Web/Fluent/Blazor/WebAssembly/PWA                                                   
+FluentUI Blazor Server App                      fluentuiblazorserver   [C#]      Linux/macOS/Windows/Blazor/Cloud/Web                                                
+FluentUI Blazor WebAssembly App                 fluentuiblazorwasm     [C#]      Linux/macOS/Windows/Blazor/Cloud/Web                                                
+```
+
+
+```shell
+md samples
+dotnet new \
+    maui-blazor \
+        --output \
+            samples/AppDemo.MobileHybrid.MAUI.Blazor
+dotnet new \
+    maui-blazor-web \
+        --output \
+            samples/AppDemo.MobileHybrid.MAUI.Blazor.Suite
+dotnet new \
+    blazor \
+        --output \
+            samples/AppDemo.Web.Blazor
+dotnet new \
+    blazorwasm \
+        --output \
+            samples/AppDemo.Web.Blazor.WASM.ProgressiveWebApp.PWA
+dotnet new \
+    fluentuiblazorserver \
+        --output \
+            samples/AppDemo.Web.Blazor.FluentUI.Server
+dotnet new \
+    fluentuiblazorwasm \
+        --output \
+            samples/AppDemo.Web.Blazor.FluentUI.Client.WASM
+dotnet new \
+    fluentmaui-blazor-web \
+        --output \
+            samples/AppDemo.MAUI.Blazor.FluentUI.Suite            
+dotnet new \
+    fluentblazor \
+        --output \
+            samples/AppDemo.Web.Blazor.Fluent.Server
+dotnet new \
+    fluentblazorwasm \
+        --output \
+            samples/AppDemo.Web.Blazor.Fluent.Client.WASM
+```
+
+
 ## 1. Create solution
 
 > 1. Create an empty Solution and name it MyApp
