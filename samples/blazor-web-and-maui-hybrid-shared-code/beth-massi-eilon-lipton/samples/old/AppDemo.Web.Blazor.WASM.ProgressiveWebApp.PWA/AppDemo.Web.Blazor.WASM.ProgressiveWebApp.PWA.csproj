@@ -11,8 +11,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.0.8" PrivateAssets="all" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
+  </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Library.Razor.SharedCode\Library.Razor.SharedCode.csproj" />
+    <ServiceWorker Include="wwwroot\service-worker.js"
+                   PublishedContent="wwwroot\service-worker.published.js" />
   </ItemGroup>
-
 </Project>

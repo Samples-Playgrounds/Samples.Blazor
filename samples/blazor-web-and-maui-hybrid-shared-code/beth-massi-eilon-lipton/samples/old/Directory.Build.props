@@ -1,0 +1,8 @@
+<Project>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\source\Library.Razor.SharedCode\Library.Razor.SharedCode.csproj" />
+    </ItemGroup>
+
+</Project>
