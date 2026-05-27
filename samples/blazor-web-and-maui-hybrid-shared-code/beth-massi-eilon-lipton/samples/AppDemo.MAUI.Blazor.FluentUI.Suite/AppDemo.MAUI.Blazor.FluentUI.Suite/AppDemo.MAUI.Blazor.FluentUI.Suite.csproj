@@ -67,11 +67,5 @@
     <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" Version="4.14.2" />
     <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.14.2" />
   </ItemGroup>
-
-  <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\source\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared.csproj" />
-  </ItemGroup>
-
+  
 </Project>
