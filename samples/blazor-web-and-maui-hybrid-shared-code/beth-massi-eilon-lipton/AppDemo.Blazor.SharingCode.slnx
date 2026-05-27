@@ -21,16 +21,16 @@
     <Project Path="samples/AppDemo.MobileHybrid.MAUI.Blazor.Suite/AppDemo.MobileHybrid.MAUI.Blazor.Suite/AppDemo.MobileHybrid.MAUI.Blazor.Suite.csproj" />
   </Folder>
   <Folder Name="/solution-project/samples/old/">
-    <Project Path="AppDemo.MobileHybrid.MAUI.Blazor/AppDemo.MobileHybrid.MAUI.Blazor.csproj" />
-    <Project Path="AppDemo.Web.Blazor.Server.Empty/AppDemo.Web.Blazor.Server.Empty.csproj" />
-    <Project Path="AppDemo.Web.Blazor.Server/AppDemo.Web.Blazor.Server.csproj" />
-    <Project Path="AppDemo.Web.Blazor.WASM.ProgressiveWebApp.PWA/AppDemo.Web.Blazor.WASM.ProgressiveWebApp.PWA.csproj" />
-    <Project Path="AppDemo.Web.Blazor.WASM.WASM.ProgressiveWebApp.PWA.Empty/AppDemo.Web.Blazor.WASM.WASM.ProgressiveWebApp.PWA.Empty.csproj" />
-    <Project Path="AppDemo.Web.Blazor/AppDemo.Web.Blazor.csproj" />
+    <Project Path="samples/old/AppDemo.MobileHybrid.MAUI.Blazor/AppDemo.MobileHybrid.MAUI.Blazor.csproj" />
+    <Project Path="samples/old/AppDemo.Web.Blazor.Server.Empty/AppDemo.Web.Blazor.Server.Empty.csproj" />
+    <Project Path="samples/old/AppDemo.Web.Blazor.Server/AppDemo.Web.Blazor.Server.csproj" />
+    <Project Path="samples/old/AppDemo.Web.Blazor.WASM.ProgressiveWebApp.PWA/AppDemo.Web.Blazor.WASM.ProgressiveWebApp.PWA.csproj" />
+    <Project Path="samples/old/AppDemo.Web.Blazor.WASM.WASM.ProgressiveWebApp.PWA.Empty/AppDemo.Web.Blazor.WASM.WASM.ProgressiveWebApp.PWA.Empty.csproj" />
+    <Project Path="samples/old/AppDemo.Web.Blazor/AppDemo.Web.Blazor.csproj" />
   </Folder>
   <Folder Name="/solution-project/source/">
-    <Project Path="Library.Razor.SharedCode/Library.Razor.SharedCode.csproj" />
     <Project Path="samples/AppDemo.MAUI.Blazor.FluentUI.Suite/AppDemo.MAUI.Blazor.FluentUI.Suite.Shared/AppDemo.MAUI.Blazor.FluentUI.Suite.Shared.csproj" />
     <Project Path="samples/AppDemo.MobileHybrid.MAUI.Blazor.Suite/AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared/AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared.csproj" />
+    <Project Path="source/Library.Razor.SharedCode/Library.Razor.SharedCode.csproj" />
   </Folder>
 </Solution>
