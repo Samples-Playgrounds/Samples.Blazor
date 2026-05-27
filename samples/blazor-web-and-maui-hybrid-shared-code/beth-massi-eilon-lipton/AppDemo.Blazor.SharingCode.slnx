@@ -13,6 +13,7 @@
     <Project Path="samples/AppDemo.Web.Blazor/AppDemo.Web.Blazor.csproj" />
   </Folder>
   <Folder Name="/solution-project/samples/AppDemo.MAUI.Blazor.FluentUI.Suite/">
+    <File Path="samples\AppDemo.MAUI.Blazor.FluentUI.Suite\Directory.Build.props" />
     <Project Path="samples/AppDemo.MAUI.Blazor.FluentUI.Suite/AppDemo.MAUI.Blazor.FluentUI.Suite.Web/AppDemo.MAUI.Blazor.FluentUI.Suite.Web.csproj" />
     <Project Path="samples/AppDemo.MAUI.Blazor.FluentUI.Suite/AppDemo.MAUI.Blazor.FluentUI.Suite/AppDemo.MAUI.Blazor.FluentUI.Suite.csproj" />
   </Folder>
@@ -31,6 +32,8 @@
   <Folder Name="/solution-project/source/">
     <Project Path="source/AppDemo.MAUI.Blazor.FluentUI.Suite.Shared/AppDemo.MAUI.Blazor.FluentUI.Suite.Shared.csproj" />
     <Project Path="source/AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared/AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared.csproj" />
+    <Project Path="source/HolisticWare.Utilities.Razor.ClockStopwatchTimer/HolisticWare.Utilities.Razor.ClockStopwatchTimer.csproj" />
+    <Project Path="source/HolisticWare.Utilities.Razor.Diagrams/HolisticWare.Utilities.Razor.Diagrams.csproj" />
     <Project Path="source/Library.Razor.SharedCode/Library.Razor.SharedCode.csproj" />
   </Folder>
 </Solution>
