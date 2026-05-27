@@ -29,8 +29,8 @@
     <Project Path="samples/old/AppDemo.Web.Blazor/AppDemo.Web.Blazor.csproj" />
   </Folder>
   <Folder Name="/solution-project/source/">
-    <Project Path="samples/AppDemo.MAUI.Blazor.FluentUI.Suite/AppDemo.MAUI.Blazor.FluentUI.Suite.Shared/AppDemo.MAUI.Blazor.FluentUI.Suite.Shared.csproj" />
-    <Project Path="samples/AppDemo.MobileHybrid.MAUI.Blazor.Suite/AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared/AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared.csproj" />
+    <Project Path="source/AppDemo.MAUI.Blazor.FluentUI.Suite.Shared/AppDemo.MAUI.Blazor.FluentUI.Suite.Shared.csproj" />
+    <Project Path="source/AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared/AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared.csproj" />
     <Project Path="source/Library.Razor.SharedCode/Library.Razor.SharedCode.csproj" />
   </Folder>
 </Solution>
