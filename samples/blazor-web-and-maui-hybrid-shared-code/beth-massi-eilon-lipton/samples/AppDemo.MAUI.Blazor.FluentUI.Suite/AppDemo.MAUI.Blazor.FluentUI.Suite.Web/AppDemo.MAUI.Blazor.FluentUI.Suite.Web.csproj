@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\source\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared.csproj" />
-    <ProjectReference Include="..\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" Version="4.14.2" />
     <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.14.2" />
   </ItemGroup>

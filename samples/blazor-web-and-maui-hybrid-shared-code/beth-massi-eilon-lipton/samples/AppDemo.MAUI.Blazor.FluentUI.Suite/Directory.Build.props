@@ -1,0 +1,6 @@
+<Project>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\source\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
