@@ -41,6 +41,11 @@ dotnet new \
 dotnet new \
     blazorwasm \
         --output \
+            samples/AppDemo.Web.Blazor.WASM
+dotnet new \
+    blazorwasm \
+        --pwa \
+        --output \
             samples/AppDemo.Web.Blazor.WASM.ProgressiveWebApp.PWA
 dotnet new \
     fluentuiblazorserver \
