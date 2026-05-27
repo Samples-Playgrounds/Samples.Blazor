@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\source\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared.csproj" />
     <ProjectReference Include="..\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared\AppDemo.MAUI.Blazor.FluentUI.Suite.Shared.csproj" />
   </ItemGroup>
   <ItemGroup>

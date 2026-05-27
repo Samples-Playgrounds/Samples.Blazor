@@ -74,7 +74,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared\AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared.csproj" />
+    <ProjectReference Include="..\..\..\source\AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared\AppDemo.MobileHybrid.MAUI.Blazor.Suite.Shared.csproj" />
   </ItemGroup>
 
 </Project>
